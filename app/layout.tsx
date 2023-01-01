@@ -1,18 +1,17 @@
+import ProductCtxProvider from "../context/cartContext";
 import "../styles/globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+type TProp = {
+  children: JSX.Element;
+};
+
+export default function RootLayout({ children }: TProp) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-      <body>{children}</body>
+      <body>
+        <ProductCtxProvider>{children}</ProductCtxProvider>
+      </body>
     </html>
   );
 }
