@@ -1,0 +1,20 @@
+.container {
+  color: #fff;
+  position: relative;
+  margin: 0 30px;
+}
+
+.number {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -20%);
+  display: block;
+  background: red;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 100%;
+  text-align: center;
+}
