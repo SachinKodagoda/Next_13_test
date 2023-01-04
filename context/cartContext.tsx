@@ -1,6 +1,5 @@
-"use client";
-import React, { useMemo, useState } from "react";
-
+'use client';
+import React, { useMemo, useState } from 'react';
 type TProps = {
   children: JSX.Element;
 };
@@ -12,13 +11,13 @@ interface IContext {
 
 export const CartCtx = React.createContext<IContext>({
   cartItems: 0,
-  addToCart: () => false,
+  addToCart: () => null,
 });
 
-const CartCtxProvider = ({ children }: TProps): React.ReactElement => {
+export default function CartCtxProvider({ children }: TProps): React.ReactElement {
   const [cartItems, setCartItems] = useState(0);
   const addToCart = (items: number) => {
-    setCartItems((a) => items + a);
+    setCartItems(a => items + a);
   };
 
   const contextFns = {
@@ -37,11 +36,8 @@ const CartCtxProvider = ({ children }: TProps): React.ReactElement => {
       value={{
         ...ctxValues,
         ...contextFns,
-      }}
-    >
+      }}>
       {children}
     </CartCtx.Provider>
   );
-};
-
-export default CartCtxProvider;
+}
