@@ -1,5 +1,5 @@
+import styles from '@components_style/themeIcon.module.css';
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi2';
-import styles from './themeIcon.module.css';
 
 export default function CartIcon(): JSX.Element {
   return (

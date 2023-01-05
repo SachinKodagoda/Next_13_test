@@ -6,3 +6,7 @@
   justify-content: right;
   padding: 0 15px;
 }
+
+.humbugger {
+  cursor: pointer;
+}

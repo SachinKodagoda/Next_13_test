@@ -1,0 +1,30 @@
+.container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 300px;
+  height: 100%;
+  background: #fff;
+  padding: 30px;
+}
+
+.menu {
+}
+
+.menuItem {
+  font-size: 18px;
+  margin-bottom: 18px;
+  cursor: pointer;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.cross {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  transform: translate(-25%, 25%);
+  cursor: pointer;
+}
